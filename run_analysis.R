@@ -96,6 +96,3 @@ final_data <- total_data %>%
 
 str(final_data)
 View(final_data)
-
-
-
