@@ -1,0 +1,36 @@
+---
+title: "CodeBook: Human Activity Recognition Using Smartphones"
+output: html_document
+---
+
+## 1. Project Description
+- **Objective**: To collect and analyze motion data from smartphones to identify types of human activities.
+- **Tools**: Smartphones equipped with accelerometers and gyroscopes to record movements.
+
+## 2. Data Sources
+- **Participants**: 30 volunteers from various age groups.
+- **Activities**: Walking, walking upstairs, walking downstairs, sitting, standing, and laying.
+
+## 3. Data Processing
+- **Data Collection**: Data was recorded at a rate of 50 Hz.
+- **Data Filtering**: Used a Butterworth filter to separate gravity and body motion signals.
+- **Time Windows**: Signals were divided into 2.56-second windows with 50% overlap.
+
+## 4. Variables and Definitions
+- **Time Variables (t)**: such as tBodyAcc-XYZ, tBodyGyro-XYZ.
+- **Frequency Variables (f)**: such as fBodyAcc-XYZ, fBodyGyro-XYZ.
+- **Statistics**: such as mean (mean), standard deviation (std), energy (energy), entropy (entropy).
+
+## 5. Statistical Outputs
+- **Data Summary**: Averages and standard deviations were calculated for each window for each activity.
+- **Activity Classification**: Models were used to classify the type of activity based on the extracted variables.
+
+## 6. Data Files
+- **features_info.txt**: Description of the variables used.
+- **activity_labels.txt**: Links between activity labels and their names.
+- **X_train.txt, y_train.txt**: Training datasets and labels.
+- **X_test.txt, y_test.txt**: Test datasets and labels.
+
+## 7. Usage and Licensing
+- **Usage**: The data source must be cited in any publications that use this data.
+- **License**: The data is distributed "as is" without any warranties or responsibility for its use.
