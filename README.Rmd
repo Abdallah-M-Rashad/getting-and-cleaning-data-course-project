@@ -1,0 +1,29 @@
+# Human Activity Recognition Using Smartphones
+
+## Introduction
+This project aims to demonstrate the ability to collect, organize, and clean data using a dataset of recognized human activities using smartphones. The script is designed to run in the R environment, specifically using RStudio, and utilizes the dplyr library for data manipulation.
+
+## Run the Script
+To run the `run_analysis.R` script, ensure the dplyr library is installed:
+```r
+if (!require(dplyr)) {
+    install.packages("dplyr")
+    library(dplyr)
+}
+```
+After ensuring the dplyr library is loaded, the script can be executed in the R environment to perform data collection, cleaning, and summarizing into final datasets with average values for each subject and activity.
+
+## Project Files
+- **`run_analysis.R`**: The main script for data analysis. It performs the following steps:
+  - Checks for and installs the dplyr library if necessary.
+  - Reads and analyzes data from the training and test datasets.
+  - Merges and cleans the datasets.
+  - Creates a final summarized dataset.
+
+- **Data folder (UCI HAR Dataset)**: Contains all the raw and processed data files:
+  - **Raw data files**: Include sensor data used in the analysis.
+  - **Processed data files**: Contain data after the cleaning and processing phase.
+
+- **Documentation Files**:
+  - **`features_info.txt`**: Provides details about the variables used in the analysis.
+  - **`activity_labels.txt`**: Contains the mapping between activity IDs and their descriptive names.
