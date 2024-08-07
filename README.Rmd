@@ -1,29 +1,78 @@
-# Human Activity Recognition Using Smartphones
+# **Tidying data**
 
-## Introduction
-This project aims to demonstrate the ability to collect, organize, and clean data using a dataset of recognized human activities using smartphones. The script is designed to run in the R environment, specifically using RStudio, and utilizes the dplyr library for data manipulation.
+-------------------------------------------------------------------------------------
 
-## Run the Script
-To run the `run_analysis.R` script, ensure the dplyr library is installed:
+### Data collation of human activity recognition experiment using smartphone dataset
+
+-------------------------------------------------------------------------------------
+
+>#### **Table of Contents**
+
+* General info
+* Installation
+* Dependencies
+* Assets
+* Usage
+* License
+
+-------------------------------------------------------------------------------------
+
+>#### **General info**
+
+* The purpose of this project is to demonstrate my ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis.
+
+
+-------------------------------------------------------------------------------------
+
+>#### **Installation**
+
+1. Clone this repository.
+2. Install R on your device. You can download it from [R.link](https://cran.rstudio.com/).
+3. Make sure you have any editor or compiler that supports R (such as RStudio or Visual Studio Code with R extension).
+
+-------------------------------------------------------------------------------------
+
+>#### **Dependencies**
+
+##### This project uses the (dplyr) package to facilitate and speed up tasks.
+
+-------------------------------------------------------------------------------------
+
+>#### **Assets**
+
+This project includes the following asset:
+
+* Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:[link](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
+
+* Here are the data for the project:[link](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
+
+-------------------------------------------------------------------------------------
+
+>#### **Usage**
+
+* Open any editor or compiler that supports R (such as RStudio or Visual Studio Code with the R extension) 
+* Run the script (run_analysis).
 ```r
-if (!require(dplyr)) {
-    install.packages("dplyr")
-    library(dplyr)
-}
+source("run_analysis.R")
 ```
-After ensuring the dplyr library is loaded, the script can be executed in the R environment to perform data collection, cleaning, and summarizing into final datasets with average values for each subject and activity.
 
-## Project Files
-- **`run_analysis.R`**: The main script for data analysis. It performs the following steps:
-  - Checks for and installs the dplyr library if necessary.
-  - Reads and analyzes data from the training and test datasets.
-  - Merges and cleans the datasets.
-  - Creates a final summarized dataset.
 
-- **Data folder (UCI HAR Dataset)**: Contains all the raw and processed data files:
-  - **Raw data files**: Include sensor data used in the analysis.
-  - **Processed data files**: Contain data after the cleaning and processing phase.
+-------------------------------------------------------------------------------------
 
-- **Documentation Files**:
-  - **`features_info.txt`**: Provides details about the variables used in the analysis.
-  - **`activity_labels.txt`**: Contains the mapping between activity IDs and their descriptive names.
+License
+========
+Usage of Dataset:
+
+The dataset utilized in this project is open for academic and research purposes under the following conditions:
+
+Any publication or distribution of results derived from this dataset must acknowledge the original authors as specified in the reference below:
+
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra, and Jorge L. Reyes-Ortiz. "Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine." International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. December 2012.
+
+Distribution and Liability:
+
+This dataset is distributed in the AS-IS condition. No warranty or liability is implied or expressly stated by the authors or their institutions for the use or misuse of the data.
+Commercial use of this dataset is strictly prohibited.
+Authorship:
+
+The dataset was collected and prepared by Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, and Davide Anguita. The data collection was conducted in November 2012.
